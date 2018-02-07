@@ -12,7 +12,7 @@ package exe:
 
 ```py
 # !Notice before package, we must modify C:\Python27\Lib\site-packages\pydivert\windivert_dll\__init__.py 35 line
-# In this way, we can load WinDivert64.dll in current path avoid pyinstaller dll bug.
+# In this way, we can load WinDivert64.dll in current path avoid pyinstaller dll bug. Don't forget to copy WinDivert64.dll, WinDivert32.dll, WinDivert64.sys and WinDivert32.sys to current running folder.
 
 if platform.architecture()[0] == "64bit":
     #DLL_PATH = os.path.join(here, "WinDivert64.dll")
